@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        Check the number is Krishnamurti or not:--
+    </div>
+    <script>
+        var n,r,f,s=0,x;
+        n=Number(prompt("Enter a number:"));
+        document.write("The number is:",n,"<br>");
+        x=n;
+        while(n!=0){
+            r=n%10;
+            n=Math.floor(n/10);
+            f=1;
+            while(r>1){
+                f=f*r;
+                r--;
+            }
+        s=s+f;
+        }
+        if(x==s){
+            document.write(`The number ${x} is Krishnamurti number.`);
+        }
+        else{
+            document.write(`The number ${x} is not Krishnamurti number.`);
+        }
+    </script>
+</body>
+</html>
